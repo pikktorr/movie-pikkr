@@ -1,0 +1,10 @@
+.search-button {
+  background-color: #f65261;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}

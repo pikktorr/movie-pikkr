@@ -1,5 +1,25 @@
-.App {
-  text-align: center;
+.app-component {
   background-color: #555555;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #232323;
+  position: relative;
+  top: 3rem;
+  margin: 0rem 3rem;
+  padding: 3rem 2rem;
+}
+
+.logo {
+  color: #f65261;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  font-weight: lighter;
+  font-size: 2rem;
 }

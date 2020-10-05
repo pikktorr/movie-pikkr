@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import Banner from "./Banner";
-import Body from "./Body";
+import Header from "../Components/Header";
+// import Body from "../Components/Body";
 
 function App() {
   return (
-    <div>
-      <Banner />
-      <Body />
+    <div className="app-component">
+      <Header />
+      {/* <Body /> */}
     </div>
   );
 }
