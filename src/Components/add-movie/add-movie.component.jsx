@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./add-movie.style.css";
+import "./add-movie.styles.css";
 
 export const AddMovie = () => {
   return (

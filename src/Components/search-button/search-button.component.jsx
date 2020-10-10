@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./search-button.style.css";
+import "./search-button.styles.css";
 
 export const SearchButton = () => {
   return (

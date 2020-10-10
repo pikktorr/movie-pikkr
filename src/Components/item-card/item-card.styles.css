@@ -1,0 +1,61 @@
+.item-card {
+  width: auto;
+  height: 25rem;
+  /* background-color: #555; */
+  color: #555555;
+  /* border: 1px black solid; */
+  /* border-radius: 5px; */
+  display: grid;
+  grid-template:
+    "poster menu" 10%
+    "poster ." 70%
+    "title date" 10%
+    "genre genre" 10% / 80% 20%;
+}
+
+.item-card > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-poster {
+  grid-area: poster;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-poster img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+
+.item-poster img:hover {
+  transform: scale(1.05);
+}
+
+.item-menu {
+  grid-area: menu;
+  align-items: flex-start;
+}
+
+.item-title {
+  grid-area: title;
+  justify-content: start;
+  color: white;
+}
+
+.item-date {
+  grid-area: date;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  transform: scale(0.7);
+}
+
+.item-genre {
+  grid-area: genre;
+  justify-content: start;
+}

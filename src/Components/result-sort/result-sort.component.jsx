@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./result-sort.styles.css";
+
 export const ResultSort = () => {
   return (
     <div className="result-sort">
-      <h3>Sort By</h3>
-      <h2>Release Date</h2>
+      <p>Sort By</p>
+      <p className="result-sort-button">Release Date</p>
     </div>
   );
 };

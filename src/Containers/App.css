@@ -1,23 +1,26 @@
-.app-component {
-  background-color: #555555;
-  height: 100vh;
+* {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #555555;
+  min-height: 100vh;
+}
+
 .header {
   background-color: #232323;
-  margin: 0rem 3rem;
-  padding: 3rem 2rem;
+  margin: 3rem;
+}
+
+.result-body {
+  background-color: #232323;
+  margin: 3rem;
+  padding: 3rem;
+  border-radius: 10px;
 }
 
 .logo {
   color: #f65261;
   font-weight: bold;
-}
-
-h3 {
-  color: white;
-  font-weight: lighter;
-  font-size: 2rem;
 }

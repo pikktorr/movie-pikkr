@@ -5,11 +5,14 @@ import { ResultFilter } from "./result-filter/result-filter.component";
 import { ResultCount } from "./result-count/result-count.component";
 import { ItemList } from "./item-list/item-list.component";
 
+import "./Body.styles.css";
+
 const Body = () => {
   return (
     <div className="result-body">
-      <ResultSort />
       <ResultFilter />
+      <ResultSort />
+      <hr className="result-line" />
       <ResultCount />
       <ItemList />
     </div>

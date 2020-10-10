@@ -1,0 +1,32 @@
+.result-body {
+  display: grid;
+  grid-template:
+    "filter sort" 2rem
+    "line line" 3px
+    "count ." 4rem
+    "list list" auto;
+}
+
+.result-filter {
+  grid-area: filter;
+}
+
+.result-sort {
+  grid-area: sort;
+}
+
+.result-line {
+  grid-area: line;
+  height: 3px;
+  background: #555555;
+  border: none;
+}
+
+.result-count {
+  grid-area: count;
+  align-self: center;
+}
+
+.item-list {
+  grid-area: list;
+}
