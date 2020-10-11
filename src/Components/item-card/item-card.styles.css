@@ -1,10 +1,7 @@
 .item-card {
   width: auto;
   height: 25rem;
-  /* background-color: #555; */
   color: #555555;
-  /* border: 1px black solid; */
-  /* border-radius: 5px; */
   display: grid;
   grid-template:
     "poster menu" 10%
@@ -30,7 +27,7 @@
 .item-poster img {
   width: 100%;
   height: auto;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .item-poster img:hover {

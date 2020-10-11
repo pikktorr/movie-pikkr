@@ -8,14 +8,14 @@ body {
   min-height: 100vh;
 }
 
-.header {
-  background-color: #232323;
-  margin: 3rem;
+.app-container {
+  width: 75vw;
+  margin: 0 auto;
 }
+
 
 .result-body {
   background-color: #232323;
-  margin: 3rem;
   padding: 3rem;
   border-radius: 10px;
 }
