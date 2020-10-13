@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 
 import { AddMovie } from "./add-movie/add-movie.component";
 import { SearchButton } from "./search-button/search-button.component";
@@ -20,7 +20,6 @@ const Header = () => {
       </form>
       <div className="background-image">
         <img src={backgroundImage} alt=""/>
-        {/* <div className="blur"></div> */}
       </div>
     </div>
   );
