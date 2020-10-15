@@ -3,19 +3,21 @@
   height: 25rem;
   color: #555555;
   display: grid;
+  /* "poster menu" 10% */
   grid-template:
-    "poster menu" 10%
+    "poster ." 10%
     "poster ." 70%
     "title date" 10%
     "genre genre" 10% / 80% 20%;
   transition: transform 0.5s ease-in-out;
+  position: relative;
 }
 
-.item-card:hover {
+/* .item-card:hover {
   transform: scale(1.02);
   box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
-}
+} */
 
 .item-card > * {
   display: flex;
@@ -37,8 +39,13 @@
 }
 
 .item-menu {
-  grid-area: menu;
-  align-items: flex-start;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: auto;
 }
 
 .item-title {
