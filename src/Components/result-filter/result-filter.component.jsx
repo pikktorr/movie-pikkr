@@ -6,7 +6,7 @@ export const ResultFilter = () => {
   return (
     <div className="result-filter">
       <ul className="result-list">
-        <li className="filter-all">All</li>
+        <li className="filter-all filtered">All</li>
         <li className="filter-documentary">Documentary</li>
         <li className="filter-comedy">Comedy</li>
         <li className="filter-horror">Horror</li>

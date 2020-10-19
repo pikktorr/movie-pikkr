@@ -3,6 +3,7 @@ import "./App.css";
 
 import Header from "../Components/Header";
 import Body from "../Components/Body";
+import ErrorBoundary from "./ErrorBoundary";
 
 class App extends Component {
   constructor() {
@@ -11,10 +12,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="app-container">
-        <Header />
-        <Body />
-      </div>
+      <ErrorBoundary>
+        <div className="app-container">
+          <Header />
+          <Body />
+        </div>
+      </ErrorBoundary>
     );
   }
 }

@@ -11,15 +11,21 @@
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 
 .logo {
   grid-area: logo;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
 }
 
 .add-movie-button {
   grid-area: add-movie;
-  justify-self: end;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
 }
 
 .header-title {
@@ -29,12 +35,15 @@
   font-size: 2rem;
   font-weight: 300;
   padding-left: 3rem;
+  text-align: center;
 }
 
 .header-form {
   grid-area: form;
   justify-self: center;
-  width: auto;
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 2px;
 }
 
 .background-image {

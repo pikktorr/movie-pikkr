@@ -1,7 +1,12 @@
 .search-input {
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 20rem;
+  width: 30rem;
   height: 2.5rem;
   border: none;
   border-radius: 0.3rem;
+  font-size: large;
+  padding-left: 10px;
+}
+
+.search-input:focus {
+  outline: none;
 }
