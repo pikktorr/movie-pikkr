@@ -10,6 +10,12 @@ class App extends Component {
     super();
     this.state = {};
   }
+
+  componentDidMount() {
+    console.log("fiasdas");
+  }
+
+  
   render() {
     return (
       <ErrorBoundary>

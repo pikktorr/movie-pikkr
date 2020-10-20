@@ -1,4 +1,4 @@
-  import React from "react";
+import React from "react";
 
 import { AddMovie } from "./add-movie/add-movie.component";
 import { SearchButton } from "./search-button/search-button.component";
@@ -6,7 +6,7 @@ import { SearchInput } from "./search-input/search-input.component";
 
 import "./Header.styles.css";
 
-import backgroundImage from "../assets/netflix_hero_img.png"
+import backgroundImage from "../assets/netflix_hero_img.png";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         <SearchButton />
       </form>
       <div className="background-image">
-        <img src={backgroundImage} alt=""/>
+        <img src={backgroundImage} alt="" />
       </div>
     </div>
   );
