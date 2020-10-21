@@ -25,7 +25,7 @@ class ErrorBoundary extends React.Component {
       return(
         <div>
          Something went wrong
-         <img src="https://i.imgur.com/Q2BAOd2.png" />
+         <img src="https://i.imgur.com/Q2BAOd2.png" alt="Error sign: A lost person with a map."/>
         </div>
         )
 
