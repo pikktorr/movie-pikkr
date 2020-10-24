@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./add-movie.styles.css";
+import "./add-movie-button.styles.css";
 
-export const AddMovie = () => {
+export const AddMovieButton = () => {
   return (
     <button type="button" className="add-movie-button">
       + ADD MOVIE
