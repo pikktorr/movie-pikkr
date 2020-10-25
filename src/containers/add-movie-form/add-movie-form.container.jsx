@@ -1,35 +1,99 @@
 import React from "react";
 
+import { Link } from "react-router-dom"
+import CloseIcon from '@material-ui/icons/Close';
+
 import "./add-movie-form.styles.scss"
 
-import DatePickers from "../../components/date-picker/date-picker.component.jsx"
-import NativeSelects from "../../components/select-genre/select-genre.component.jsx"
-import TextInput from "../../components/text-input/text-input.component.jsx"
 
 
 
-const AddMovieForm = () => {
+
+
+class AddMovieForm extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      title:"",
+      date:"",
+      url:"",
+      genre:"",
+      overview:"",
+      runtime:0
+    };
+  }
+  
+  
+  // componentDidMount(){
+  //   console.log(this.state)
+  // }
+  
+  // componentDidUpdate(){
+  //   console.log(this.state)
+  // }
+  
+  handleInputChange = event =>{
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit = event =>{
+    event.preventDefault();
+    console.log(this.state);
+  }
+
+
+
+
+  render(){
   return (
     <section className="add-movie-form">
-      <div className="x-button">x</div>
-      <h3 className="form-title">Add movie</h3>
-      <TextInput label="Title" placeholder="Enter movie title" />
-      <TextInput label="Release Date" placeholder="Enter release date " />
-      <DatePickers />
-      <h2>Movie URL</h2>
-      <TextInput label="Movie Url" placeholder="Enter release date " />
-      <input type="text" className="url-input" placeholder="Movie URL"/>
-      <h2>Genre</h2>
-      <NativeSelects />
-      <h2>Overview</h2>
-      <TextInput label="Release Date" placeholder="Enter release date " />
-      <input type="text" className="overview-input" placeholder="Overview"/>
-      <h2>Runtime</h2>
-      <input type="number" className="runtime-input" placeholder="Runtime"/>
-      <button>Reset</button>
-      <button>Submit</button>
+      <Link to="/">
+        <CloseIcon className="close-icon"/>
+      </Link>
+      <h3 className="form-title">ADD MOVIE</h3>
+      <form onSubmit={this.handleSubmit}>
+        <label htmlFor="movie-title">
+          Title
+          <input type="text" name="title" id="movie-title" onChange={this.handleInputChange}/>
+        </label><br/>
+        <label htmlFor="movie-date">
+          Release date
+          <input type="date" name="date" id="movie-date" onChange={this.handleInputChange}/>
+        </label><br/>
+        <label htmlFor="movie-url">
+        Movie URL
+          <input type="url" name="url" id="movie-url" onChange={this.handleInputChange}/>
+        </label><br/>
+        <label htmlFor="select-genre">
+          Genre
+          <select name="genre" id="select-genre" onChange={this.handleInputChange}>
+            <option value=""></option>
+            <option value="documentary">Documentary</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="crime">Crime</option>
+          </select>
+        </label><br/>
+        <label htmlFor="movie-overview">
+          Overview
+          <textarea name="overview" id="movie-overview" onChange={this.handleInputChange}></textarea>
+        </label><br/>
+        <label htmlFor="movie-runtime">
+          Runtime
+          <input type="number" name="runtime" id="movie-runtime" onChange={this.handleInputChange}/>
+        </label><br/>
+      <button type="reset" id="reset-button">Reset</button>
+      <button type="submit" id="submit-button">Submit</button>
+      </form>
     </section>
     );
+  }
 };
 
 export default AddMovieForm;
